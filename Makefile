@@ -1,10 +1,8 @@
-# Makefile for bash-mini shell
-# System Programming – HW3
+CC = gcc
+CFLAGS = -Wall -Wextra -std=c99
 
-CC      = gcc
-CFLAGS  = -std=c11 -Wall -Wextra -pedantic
-TARGET  = bash-mini
-SRC     = bash_mini.c
+TARGET = mini_bash
+SRC = mini_bash.c
 
 all: $(TARGET)
 
@@ -14,4 +12,3 @@ $(TARGET): $(SRC)
 clean:
 	rm -f $(TARGET)
 
-.PHONY: all clean
